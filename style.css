@@ -1,0 +1,34 @@
+body {
+    height: 100vh;
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    border: 1px solid #999;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    gap: 16px;
+}
+
+a:link {
+    text-decoration: none;
+}
