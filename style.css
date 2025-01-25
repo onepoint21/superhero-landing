@@ -1,34 +1,65 @@
+/* General Resets */
 body {
     height: 100vh;
-    font-family: "Roboto";
-    margin: 0;
-    padding: 0;
+    font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
+    /* Ensures content stacks properly */
+    margin: 0;
+    padding: 0;
 }
 
+/* Optional Debugging Borders */
 div {
-    border: 1px solid #999;
+    border: 1px solid transparent;
+    /* Remove visible border unless debugging */
 }
+
+/* TOP HEADER */
 
 .header-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    background-color: #1f2937;
 }
 
-
-.header {
+.header-container {
     display: flex;
+    width: 100%;
+    max-width: 1400px;
+    min-width: 400px;
+    height: 64px;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    /* Add horizontal padding */
+    margin: 0 auto;
+    background-color: #1f2937;
 }
 
-ul {
+/* Header Logo */
+.header-logo {
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Header Links */
+.header-links ul {
     display: flex;
     list-style-type: none;
     padding-left: 0;
-    gap: 16px;
+    gap: 24px;
+    align-items: center;
+    /* Ensures links are vertically aligned */
 }
 
-a:link {
+.header-links a {
     text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.header-links a:hover {
+    color: #3882f6;
 }
