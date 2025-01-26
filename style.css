@@ -122,6 +122,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     font-size: 24px;
+    padding-right: 32px;
     color: #e5e7eb;
 }
 
@@ -154,12 +155,22 @@ button:hover {
     align-items: center;
     height: auto;
     max-width: 700px;
-    min-width: 500px;
+    min-width: 400px;
     aspect-ratio: 700 / 360;
     flex: 1 1;
     background-color: #777;
     color: #e5e7eb;
+    border-radius: 12px;
     font-size: 18px;
+}
+
+img {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 /* CONTENT WINDOW */
@@ -220,6 +231,12 @@ button:hover {
     border-radius: 32px;
     margin-top: 12px;
     margin-bottom: 12px;
+    overflow: hidden;
+}
+
+span {
+    font-size: 18px;
+    font-weight: 700;
 }
 
 /* QUOTE SECTION */
