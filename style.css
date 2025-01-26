@@ -2,7 +2,6 @@
 
 
 body {
-    /*     height: 100vh; */
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
@@ -11,11 +10,6 @@ body {
     min-width: 1024px;
     overflow-x: auto;
 }
-
-/* Optional Debugging Borders */
-/* div {
-    border: 1px solid #9f9f9f;
-} */
 
 /* TOP HEADER */
 
@@ -224,6 +218,50 @@ button:hover {
     width: 300px;
     border: 8px solid #3882f6;
     border-radius: 32px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/* QUOTE SECTION */
+
+.quote-wrapper {
+    display: flex;
+    width: 100%;
+    min-width: 1000px;
+    min-height: 600px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e7eb;
+}
+
+.quote-text {
+    max-width: 800px;
+    width: auto;
+    font-size: 42px;
+    font-weight: light;
+    font-style: italic;
+}
+
+.quote-author {
+    display: flex;
+    max-width: 800px;
+    justify-content: flex-end;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer-wrapper {
+    display: flex;
+    min-width: 1000px;
+    width: 100%;
+    min-height: 72px;
+    background-color: #1f2937;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    font-size: 18px;
+    color: #e5e7eb
 }
