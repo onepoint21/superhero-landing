@@ -2,7 +2,7 @@
 
 
 body {
-    height: 100vh;
+    /*     height: 100vh; */
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
@@ -13,9 +13,9 @@ body {
 }
 
 /* Optional Debugging Borders */
-/* div {
+div {
     border: 1px solid #9f9f9f;
-} */
+}
 
 /* TOP HEADER */
 
@@ -166,4 +166,33 @@ button:hover {
     background-color: #777;
     color: #e5e7eb;
     font-size: 18px;
+}
+
+/* CONTENT WINDOW */
+
+.content-wrapper,
+.content-container,
+.content-header,
+.content-main {
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+}
+
+.content-wrapper {
+    height: 600px;
+    overflow-y: auto;
+}
+
+.content-container {
+    height: 600px;
+    flex-direction: column;
+}
+
+.content-header {
+    max-height: 72px;
+    align-items: last baseline;
+    font-size: 42px;
+    color: #1f2937;
+    font-weight: 900;
 }
