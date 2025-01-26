@@ -13,9 +13,9 @@ body {
 }
 
 /* Optional Debugging Borders */
-div {
+/* div {
     border: 1px solid #9f9f9f;
-}
+} */
 
 /* TOP HEADER */
 
@@ -175,18 +175,25 @@ button:hover {
 .content-header,
 .content-main {
     display: flex;
+    max-width: 1400px;
+    width: 100%;
     flex: 1 1;
     justify-content: center;
 }
 
 .content-wrapper {
+    max-width: 1400px;
+    min-width: 1000px;
     height: 600px;
+    margin: auto;
     overflow-y: auto;
 }
 
 .content-container {
     height: 600px;
+    min-width: 1000px;
     flex-direction: column;
+    padding: 0 12px;
 }
 
 .content-header {
@@ -195,4 +202,20 @@ button:hover {
     font-size: 42px;
     color: #1f2937;
     font-weight: 900;
+}
+
+.content-main {
+    gap: 32px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content-card {
+    max-height: 360px;
+    max-width: 300px;
+}
+
+.card-box {
+    height: 300px;
+    width: 300px;
 }
