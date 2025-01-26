@@ -46,6 +46,18 @@ body {
     font-weight: 700;
 }
 
+.header-logo a {
+    text-decoration: none;
+}
+
+.header-logo a:visited {
+    color: #f9faf8;
+}
+
+.header-logo a:hover {
+    color: #3882f6;
+}
+
 /* HEADER LINKS */
 
 .header-links ul {
@@ -128,6 +140,12 @@ button {
     color: #f9faf8;
     font-size: 18px;
     font-weight: 700;
+}
+
+button:hover {
+    background-color: #e5e7eb;
+    color: #3882f6;
+    border: 4px solid #3882f6;
 }
 
 .hero-image {
