@@ -1,19 +1,21 @@
-/* General Resets */
+/* INITIAL BODY */
+
+
 body {
     height: 100vh;
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
-    /* Ensures content stacks properly */
     margin: 0;
     padding: 0;
+    min-width: 1024px;
+    overflow-x: auto;
 }
 
 /* Optional Debugging Borders */
-div {
-    border: 1px solid transparent;
-    /* Remove visible border unless debugging */
-}
+/* div {
+    border: 1px solid #9f9f9f;
+} */
 
 /* TOP HEADER */
 
@@ -27,31 +29,31 @@ div {
     display: flex;
     width: 100%;
     max-width: 1400px;
-    min-width: 400px;
+    min-width: 1000px;
     height: 64px;
     justify-content: space-between;
     align-items: center;
-    padding: 0 32px;
-    /* Add horizontal padding */
     margin: 0 auto;
+    padding: 0 12px;
     background-color: #1f2937;
 }
 
-/* Header Logo */
+/* HEADER LOGO */
+
 .header-logo {
     color: #f9faf8;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
 }
 
-/* Header Links */
+/* HEADER LINKS */
+
 .header-links ul {
     display: flex;
     list-style-type: none;
     padding-left: 0;
     gap: 24px;
     align-items: center;
-    /* Ensures links are vertically aligned */
 }
 
 .header-links a {
@@ -62,4 +64,88 @@ div {
 
 .header-links a:hover {
     color: #3882f6;
+}
+
+/* HERO WELCOME */
+
+.hero-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    background-color: #1f2937;
+}
+
+.welcome-container {
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 12px;
+    flex: 1 1;
+}
+
+.hero-text,
+.hero-image {
+    display: flex;
+    flex: 1 1;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-text,
+.subtext {
+    display: flex;
+    max-height: 180px;
+    max-width: 700px;
+    min-width: 500px;
+    flex: 1 1;
+}
+
+.title-text {
+    font-size: 64px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.subtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 24px;
+    color: #e5e7eb;
+}
+
+button {
+    height: 40px;
+    width: 180px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.hero-image {
+    display: flex;
+    align-items: center;
+    flex: 1 1;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 700px;
+    min-width: 500px;
+    aspect-ratio: 700 / 360;
+    flex: 1 1;
+    background-color: #777;
+    color: #e5e7eb;
+    font-size: 18px;
 }
