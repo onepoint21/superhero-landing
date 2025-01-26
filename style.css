@@ -184,13 +184,15 @@ button:hover {
 .content-wrapper {
     max-width: 1400px;
     min-width: 1000px;
-    height: 600px;
+    min-height: 600px;
+    height: auto;
     margin: auto;
     overflow-y: auto;
 }
 
 .content-container {
-    height: 600px;
+    min-height: 600px;
+    height: auto;
     min-width: 1000px;
     flex-direction: column;
     padding: 0 12px;
@@ -213,9 +215,15 @@ button:hover {
 .content-card {
     max-height: 360px;
     max-width: 300px;
+    text-align: center;
 }
 
 .card-box {
+    box-sizing: border-box;
     height: 300px;
     width: 300px;
+    border: 8px solid #3882f6;
+    border-radius: 32px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
